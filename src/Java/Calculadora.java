@@ -24,26 +24,25 @@ public class Calculadora {
             case 1:
                 System.out.println("Has seleccionado suma");
                 suma();
-                break;
+
             case 2:
                 System.out.println("Has seleccionado resta");
                 resta();
-                break;
+
             case 3:
                 System.out.println("Has seleccionado multiplicación");
                 multiplicacion();
-                break;
+
             case 4:
                 System.out.println("Has seleccionado división");
                 division();
-                break;
+
             case 5:
                 System.out.println("Has seleccionado resto");
                 resto();
-                break;
+
             case 6:
                 System.out.println("Apagando...");
-                break;
 
 
             default:
@@ -61,6 +60,7 @@ public class Calculadora {
         System.out.println("Selecciona el segundo operador : ");
         operador2 = sc.nextInt();
         System.out.println("\n El resultado de la suma es el siguiente : " + (operador1 + operador2));
+        repetir();
     }
 
     public static void resta() {
@@ -109,8 +109,14 @@ public class Calculadora {
 
     public static void repetir() {
         Scanner sc = new Scanner(System.in);
-        String opción;
-        System.out.println("Quieres");
+        String opcion;
+        System.out.println("¿Quieres realizar otra operación? [S/N]");
+        opcion = sc.nextLine();
+        if (opcion == "S" || opcion == "s") {
+            calculdora();
+        } else if (opcion == "N" || opcion == "n") {
+            System.out.println("Apagando...");
+        }
     }
 
 
