@@ -47,7 +47,7 @@ public class Calculadora {
                 break;
 
             case "6":
-                System.out.println("Apagando...");
+                System.out.println("\nApagando...");
                 break;
 
 
@@ -58,75 +58,63 @@ public class Calculadora {
     }
 
     public static void suma() {
-        int operador1;
-        int operador2;
+        double operador1;
+        double operador2;
         Scanner sc = new Scanner(System.in);
         System.out.println("\nSelecciona el primer operador : ");
-        operador1 = sc.nextInt();
+        operador1 = sc.nextDouble();
         System.out.println("Selecciona el segundo operador : ");
-        operador2 = sc.nextInt();
-        System.out.println("\n El resultado de la suma es el siguiente : " + (operador1 + operador2));
+        operador2 = sc.nextDouble();
+        System.out.println("\n El resultado de la suma es el siguiente : " + (operador1 + operador2)+"\n");
         calculdora();
     }
 
     public static void resta() {
-        int operador1;
-        int operador2;
+        double operador1;
+        double operador2;
         Scanner sc = new Scanner(System.in);
         System.out.println("\nSelecciona el primer operador : ");
-        operador1 = sc.nextInt();
+        operador1 = sc.nextDouble();
         System.out.println("Selecciona el segundo operador : ");
-        operador2 = sc.nextInt();
-        System.out.println("\n El resultado de la resta es el siguiente : " + (operador1 - operador2));
+        operador2 = sc.nextDouble();
+        System.out.println("\n El resultado de la resta es el siguiente : " + (operador1 - operador2)+"\n");
         calculdora();
     }
 
     public static void multiplicacion() {
-        int operador1;
-        int operador2;
+        double operador1;
+        double operador2;
         Scanner sc = new Scanner(System.in);
         System.out.println("\nSelecciona el primer operador : ");
-        operador1 = sc.nextInt();
+        operador1 = sc.nextDouble();
         System.out.println("Selecciona el segundo operador : ");
-        operador2 = sc.nextInt();
-        System.out.println("\n El resultado de la multiplicación es el siguiente : " + (operador1 * operador2));
+        operador2 = sc.nextDouble();
+        System.out.println("\n El resultado de la multiplicación es el siguiente : " + (operador1 * operador2)+"\n");
         calculdora();
     }
 
     public static void division() {
-        int operador1;
-        int operador2;
+        double operador1;
+        double operador2;
         Scanner sc = new Scanner(System.in);
         System.out.println("\nSelecciona el primer operador : ");
-        operador1 = sc.nextInt();
+        operador1 = sc.nextDouble();
         System.out.println("Selecciona el segundo operador : ");
-        operador2 = sc.nextInt();
-        System.out.println("\n El resultado de la división es el siguiente : " + (operador1 / operador2));
+        operador2 = sc.nextDouble();
+        System.out.println("\n El resultado de la división es el siguiente : " + (operador1 / operador2)+"\n");
         calculdora();
     }
 
     public static void resto() {
-        int operador1;
-        int operador2;
+        double operador1;
+        double operador2;
         Scanner sc = new Scanner(System.in);
         System.out.println("\nSelecciona el primer operador : ");
-        operador1 = sc.nextInt();
+        operador1 = sc.nextDouble();
         System.out.println("Selecciona el segundo operador : ");
-        operador2 = sc.nextInt();
-        System.out.println("\n El resultado del resto es el siguiente : " + (operador1 % operador2));
+        operador2 = sc.nextDouble();
+        System.out.println("\n El resultado del resto es el siguiente : " + (operador1 % operador2)+"\n");
         calculdora();
-    }
-
-    public static void repetir() {
-        Scanner sc = new Scanner(System.in);
-        String opcion;
-        System.out.println("¿Quieres realizar otra operación? [S/N]");
-        opcion = sc.nextLine();
-        if (opcion == "S" || opcion == "s") {
-            calculdora();
-        } else if (opcion == "N" || opcion == "n") {
-            System.out.println("Apagando...");
-        }
     }
 
 
